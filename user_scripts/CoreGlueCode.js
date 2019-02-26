@@ -101,11 +101,11 @@ function downloadBIOS() {
 
 function registerBIOS() {
     processDownload(this, attachBIOS);
-    downloadROM(location.hash.substr(1));
+    downloadROM();
 }
 
-function downloadROM(gamename) {
-    downloadFile("./binaries/" + gamename + ".gba", registerROM);
+function downloadROM() {
+    downloadFile("./binaries/droneWar.gba", registerROM);
 }
 
 function registerROM() {
