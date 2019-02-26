@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +15,11 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="./user_css/jumbotron.css" rel="stylesheet">
@@ -27,145 +28,147 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </head>
 <style>
     table {
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
-    table, th, td {
-    border: 1px solid black;
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
     }
-    th, td {
-  padding: 3px;
-}
 
-/* tr { display: block; float: left; }
-th, td { display: block; } */
+    th,
+    td {
+        padding: 3px;
+    }
 
-.left {
-    width: 47.5%;
-    float: left;
+    p.line
+        {
+        margin: 0;
+        padding: 0;
+        }
+    .left {
+        width: 47.5%;
+        float: left;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
-.right {
-    width: 47.55%;
-    float: right;
-}
+    }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    .right {
+        width: 47.55%;
+        float: right;
+    }
 
-.middle {
-    width: 5%;
-}
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-
-
+    .middle {
+        width: 5%;
+    }
 </style>
+
 <body class="text-center">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></button>
-                </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar"></button>
             </div>
-        </nav>
-        
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1>Welcome!</h1>
-                <p>This website hosts a hw for CS 2110 written during the Spring of 2017 and is running a gameboy emulator.</p>
-                </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Welcome!</h1>
+            <p>This website hosts a hw for CS 2110 written during the Spring of 2017 and is running a gameboy emulator.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center flex">
+
+
+
+        <div class="thumbnail text-center left vl">
+            <h2> Instructions </h2>
+            <div>
+            <p class="line"> Press LEFT & RIGHT ARROWS to move Putin </p>
+            <p class="line">Press SEL at any time to go to the title screen </p>
+            <p class="line">Goal is to bring down the drones </p>
+            <p class="line">Press A to gun down the plane, while dodgin the plane's bombs</p>
+            <p class="line">Total of 4 levels</p>
+        </div>
+
+            <table>
+                <tr>
+                    <th>in GBA</th>
+                    <td>A</td>
+                    <td>SELECT</td>
+                    <td>START</td>
+                    <td>D-PAD</td>
+                </tr>
+                <tr>
+                    <th>Keyboard</th>
+                    <td>Z</td>
+                    <td>Backspace</td>
+                    <td>Enter</td>
+                    <td>Arroy Keys</td>
+                </tr>
+
+            </table>
+
+            <p class="line">Good luck, Comrade</p>
+
+
+
+        </div>
+
+        <div class=middle></div>
+
+
+        <div class="thumbnail text-center right">
+            <h2>Game</h2>
+
+            <img src="./images/droneWar.png">
+            <div class="caption">
+                <h3>
+                    <span>The Drone Rebel</span>
+                    <br>
+                </h3>
+                <p>
+                    <a href="./launcher.html#droneWar" class="btn btn-success" role="button"
+                        >Play</a>
+                    <span></span>
+                    <a href="./binaries/droneWar.gba" class="btn btn-primary" role="button">Download</a>
+                </p>
+            </div>
         </div>
 
 
-        
-        <div class="container text-center flex">
 
 
+    </div> <!-- /container -->
 
-            <div class="thumbnail text-center left vl">
-                <h2> Instructions </h2>
-                <table>
-                        <tr>
-                          <th>in GBA</th>
-                          <th>Keyboard</th> 
-                        </tr>
-                        <tr>
-                          <td>A</td>
-                          <td>Z</td> 
-                        </tr>
-                        <tr>
-                          <td>B</td>
-                          <td>X</td> 
-                        </tr>
-                        <tr>
-                                <td>L</td>
-                                <td>A</td> 
-                        </tr>
-                        <tr>
-                                <td>R</td>
-                                <td>S</td> 
-                              </tr>
-                              <tr>
-                                    <td>SELECT</td>
-                                    <td>Backspace</td> 
-                                  </tr>
-                                  <tr>
-                                        <td>START</td>
-                                        <td>Enter</td> 
-                                      </tr>
-                                      <tr>
-                                            <td>D-Pad</td>
-                                            <td>Arrow Keys</td> 
-                                          </tr>
-                </table>
-                <p>You can modify the mappings using the settings menu (click on the key in the list, then tap the key you want to map it to).</p>
+    <hr>
 
 
-            </div>
+    <footer>
+        <p>© 2017-2018 Georgia Institute of Technology.</p>
+    </footer>
+</body>
 
-            <div class = middle></div>
-
-            
-            <div class="thumbnail text-center right" data-reactid=".0.0.$Game.1:0:$0.0">
-                        <h2 data-reactid=".0.0.$Game.0">Game</h2>
-
-                <img src="./images/droneWar.png" data-reactid=".0.0.$Game.1:0:$0.0.0">
-                <div class="caption" data-reactid=".0.0.$Game.1:0:$0.0.1">
-                    <h3 data-reactid=".0.0.$Game.1:0:$0.0.1.0">
-                        <span data-reactid=".0.0.$Game.1:0:$0.0.1.0.0">The Drone Rebel</span>
-                        <br data-reactid=".0.0.$Game.1:0:$0.0.1.0.1">
-                    </h3>
-                    <p data-reactid=".0.0.$Game.1:0:$0.0.1.1">
-                        <a href="./launcher.html#droneWar" class="btn btn-success" role="button" data-reactid=".0.0.$Game.1:0:$0.0.1.1.0">Play</a>
-                        <span data-reactid=".0.0.$Game.1:0:$0.0.1.1.1"></span>
-                        <a href="./binaries/droneWar.gba" class="btn btn-primary" role="button" data-reactid=".0.0.$Game.1:0:$0.0.1.1.2">Download</a>
-                    </p>
-                </div>
-            </div>
-        
-        
-
-
-        </div> <!-- /container -->
-        
-        <hr>
-
-        
-            <footer>
-                <p>© 2017-2018 Georgia Institute of Technology.</p>
-            </footer>
-        </body>
 </html>
