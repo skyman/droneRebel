@@ -15,7 +15,7 @@ var IodineGUI = {
     GUITimerID: null,
     toMap:null,
     toMapIndice:0,
-    suspended:false,
+    suspended:true,
     isPlaying:false,
     startTime:(+(new Date()).getTime()),
     mixerInput:null,
